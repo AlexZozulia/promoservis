@@ -1,0 +1,32 @@
+@import "bootstrap/bootstrap";
+@import "main-parts/icons";
+@import "main-parts/text-color";
+@import "main-parts/font-text";
+@import "main-parts/header";
+@import "main-parts/section-slider";
+@import "main-parts/section-help";
+@import "main-parts/section-fund";
+@import "main-parts/section-volunteer";
+@import "main-parts/section-contact-us";
+@import "main-parts/section-latest-news";
+@import "vacancies/forms-volunteer";
+
+//Stairs
+@import "main-parts/section-best-gallery";
+
+@import "dist/lightbox.min";
+
+//About Us
+@import "about_us/section-about-us";
+
+//our-project
+@import "our-project/section-fund-helps";
+@import "our-project/section-projects";
+@import "our-project/section-questions";
+
+//Button Up to top
+@import "main-parts/up-to-top";
+@import "main-parts/btn-denger";
+
+//footer
+@import "main-parts/footer";

@@ -1,0 +1,173 @@
+//параметры кнопки
+.button-all {
+  padding: 13px 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: $fonNunitoSans;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+///параметры кнопки
+
+.header-contact {
+  color: #707070;
+  font-size: 14px;
+
+  span {
+    font-weight: bold;
+  }
+
+  i {
+    margin: 17px 8px;
+  }
+
+  a {
+    color: #707070;
+    text-decoration: none;
+  }
+
+  @include hover-link;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  .container {
+    .navbar {
+      .navbar-brand {
+        margin-right: 60px;
+      }
+      .navbar-toggler{
+        border-color: #FFFFFF;
+        span {
+          color: #FFFFFF;
+        }
+      }
+      .nav-effect {
+          li {
+            .dropdown-menu {
+              background: rgba(242, 175, 41, 0.25);
+              border: none;
+              transition: all .3s ;
+              a {
+                transition: all .1s ;
+              }
+            }
+            a {
+              @include fonBold($OpenSans, 20px, #ffffff);
+            }
+          }
+
+        .header-nav-hover {
+          margin-top: 5px;
+
+          &:hover {
+            color: $textRed !important;
+          }
+          &:focus {
+            color: $textRed !important;
+          }
+        }
+      }
+    }
+    .header_title {
+      padding-top: 200px;
+      padding-bottom: 50px;
+      .title_info {
+        h2{
+          @include fonBold($fonPoppins, 60px, #F2AF29);
+        }
+        h3 {
+          @include fon($fonPoppins, 53px, #E0E0CE);
+        }
+      }
+      .title_year {
+        border: solid 3px #F2AF29;
+        padding: 40px;
+        h2 {
+          @include fonBold($fonPoppins, 92px, #F2AF29);
+        }
+        h4 {
+          @include fon($fonPoppins, 30px, #E0E0CE);
+          font-style: italic;
+        }
+      }
+    }
+    .title_contact {
+      @include fon($OpenSans, 70px, #FCFCFC);
+      padding: 40px 20px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn__header {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  header {
+    li:nth-child(-n+8) {
+      border-bottom: 1px solid #888888;
+    }
+  }
+  .header-contact {
+    .header-contact__post {
+      text-align: center;
+    }
+  }
+  .header-nav-hover {
+    margin-top: 0px !important;
+  }
+  //текст заголовка
+  .title_contact {
+    font-size: 40px !important;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .btn__header {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  header {
+    li:nth-child(-n+4) {
+      border-bottom: 1px solid;
+    }
+  }
+  .header-contact {
+    .header-contact__post:nth-child(3) {
+      text-align: right;
+    }
+  }
+  .header-nav-hover {
+    margin-top: 0px !important;
+  }
+  .title_contact {
+    font-size: 50px !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .btn__header {
+    margin: 0px 20px;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+  }
+  .header-contact {
+    .header-contact__post:nth-child(3) {
+      text-align: right;
+    }
+  }
+}

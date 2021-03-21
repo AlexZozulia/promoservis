@@ -1,0 +1,10 @@
+
+.btn.btn-danger{
+  background: $bgButton;
+  border: solid 2px $bgButton;
+
+  &:hover {
+    background: #ffffff;
+    color: $bgButton;
+  }
+}
